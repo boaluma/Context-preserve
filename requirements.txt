@@ -1,8 +1,10 @@
-python-dotenv
-langchain
-PyPDF2
-faiss-cpu
-streamlit
-streamlit-extras
-openai
+langchain==0.0.154
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+streamlit==1.28.0
+faiss-cpu==1.7.4
+openai==0.28.1
+pymongo
 tiktoken
+altair<5
+OpenAI
