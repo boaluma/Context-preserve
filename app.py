@@ -38,10 +38,9 @@ def new_button():                                                               
     st.session_state.clicked = True
         
 def old_data():                                                                                                             # Call-back function for Displaying old conversations
-
-        for i,j in enumerate(db['c1'].find({}, {'_id': False})):
-            with st.expander((f"chat {i+1}")):    
-                st.write(j)
+    for i,j in enumerate(db['c1'].find({}, {'_id': False})):
+        with st.expander((f"chat {i+1}")):    
+            st.write(j)
 def insert_data(dic):                                                                                                       # Call-back function to insert data on the MongoDB databases
     try:
         db['c1'].insert_one(dic)
