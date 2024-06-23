@@ -27,8 +27,7 @@ with st.sidebar:
     add_vertical_space(5)
     st.write('Made with by Kunal Bitey')
  
-os.environ["OPENAI_API_KEY"] = st.secrets["key"]
-openai.api_key=os.environ["OPENAI_API_KEY"]
+openai.api_key=st.secrets["key"]
 load_dotenv()
 
 previous_conversation = []
